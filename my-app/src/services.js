@@ -1,26 +1,54 @@
 import React from 'react'
+import './services.css';
 
 export default function Services() {
   return (
  
     <>
-      <header style={{ backgroundColor: '#2A5CBF', padding: '20px', textAlign: 'center', color: '#FFFFFF' }}>
-        <h1>Our Services</h1>
-      </header>
+       <div class="svc-container" style={{marginBottom:'70px'}}>
+    <h2 class="svc-title">TOP SERVICES</h2>  
+    <div class="svc-grid">
+        <div class="svc-card">
+            <div class="svc-icon"><i class="fa-solid fa-link"></i></div>
+            <div class="svc-text">Connecting Businesses</div>
+        </div>
 
-      <main style={{ maxWidth: '800px', margin: 'auto', background: '#FFFFFF', padding: '20px', borderRadius: '10px' }}>
-        <h2 style={{ color: '#33A36D' }}>Business Network Development</h2>
-        <p>Creating a collaborative platform that connects businesses, facilitates partnerships, and enables resource sharing.</p>
+        <div class="svc-card">
+            <div class="svc-icon"><i class="fa-regular fa-folder"></i></div>
+            <div class="svc-text">Resource Sharing</div>
+        </div>
 
-        <h2 style={{ color: '#33A36D' }}>Logistics Optimization</h2>
-        <p>Implementing strategic logistics solutions, including real-time tracking, warehousing, and sustainable transportation.</p>
+        <div class="svc-card">
+            <div class="svc-icon"><i class="fa-solid fa-handshake"></i></div>
+            <div class="svc-text">Partnership Development</div>
+        </div>
 
-        <h2 style={{ color: '#33A36D' }}>Real-Time Tracking</h2>
-        <p>Enhancing supply chain efficiency with live tracking and analytics.</p>
+        <div class="svc-card">
+            <div class="svc-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+            <div class="svc-text">Transportation Solutions</div>
+        </div>
 
-        <h2 style={{ color: '#33A36D' }}>Green Logistics</h2>
-        <p>Introducing eco-friendly logistics with electric vehicle fleets to reduce environmental impact.</p>
-      </main>
+        <div class="svc-card">
+            <div class="svc-icon"><i class="fa-solid fa-boxes-stacked"></i></div>
+            <div class="svc-text">Warehousing</div>
+        </div>
+
+        <div class="svc-card">
+            <div class="svc-icon"><i class="fa-solid fa-truck-fast"></i></div>
+            <div class="svc-text">Delivery & Distribution</div>
+        </div>
+
+        <div class="svc-card">
+            <div class="svc-icon"><i class="fa-solid fa-chart-line"></i></div>
+            <div class="svc-text">Real-time Tracking & Analytics</div>
+        </div>
+
+        <div class="svc-card">
+            <div class="svc-icon"><i class="fa-solid fa-leaf"></i></div>
+            <div class="svc-text">Green Logistics</div>
+        </div>
+    </div>
+</div>
  </>
   )
 }

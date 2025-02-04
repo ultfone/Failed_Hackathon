@@ -1,0 +1,65 @@
+
+  .ai {
+    font-size: 20px;
+    font-weight: bold;
+    color: snow;
+    padding: 16px 48px;
+    border: none;
+    border-radius: 56px;
+    cursor: pointer;
+    background-size: 300% 300%;
+    background-image: linear-gradient(
+      65deg,
+      teal,
+      #2a5cbf,
+      #33a36d,
+      #ffc107,
+      #32bfc4,
+      #333333,
+      #333333
+    );
+    transition: transform 0.4s ease;
+    animation: gradientflow 6s ease infinite;
+  }
+
+  @keyframes gradientflow {
+    0% {
+      background-position: 0% 25%;
+    }
+    25% {
+        background-position: 50% 25%;
+    }
+    50% {
+      background-position: 75% 50%;
+    }
+    75%{
+        background-position: 100% 75%;
+    }
+    100% {
+      background-position: 0% 100%;
+    }
+  }
+  .chat-messages {
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    border-radius: 8px;
+    background: #f9f9f9;
+}
+
+.chat-message {
+    background: #eef2ff;
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.form-control {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+}
+
