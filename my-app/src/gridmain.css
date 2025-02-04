@@ -1,0 +1,41 @@
+/* * {
+    outline: 1px solid red; //GRT WAY TO CHECK which elemt is overlapping
+  } */
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    height: 76vh;
+    width: 98.5vw;
+    border: 2px solid black;
+    margin: 0px;  
+}
+
+.grid-item {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 3rem;
+    background-image: url(bg-img\ \(2\).jpg);
+    background-size: 230vh;
+    background-position: -10px -450px ;
+    overflow: hidden;
+    
+    
+}
+
+.class{
+  
+    width: 480px;
+    height: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      
+}

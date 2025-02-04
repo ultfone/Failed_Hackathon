@@ -1,0 +1,91 @@
+@import url("https://fonts.cdnfonts.com/css/soehne");
+
+:root {
+    --primary-blue: #2a5cbf; /* Primary brand color for headers and accents */
+    --secondary-green: #33a36d; /* Secondary color for highlights and borders */
+    --neutral-white: #ffffff; /* Background color for sections and cards */
+    --neutral-light-gray: #f5f5f5; /* Light background for subtle contrast */
+    --neutral-dark-gray: #333333; /* Dark text and borders */
+    --accent-yellow: #ffc107; /* Vibrant accent for CTAs and hover effects */
+    --accent-aqua: #32bfc4; /* Modern accent for icons and decorative elements */
+  }
+
+  .industry-section-container {
+    font-family: "Soehne", sans-serif;
+    background: var(--neutral-white);
+    color: var(--neutral-dark-gray);
+    padding: 40px 20px;
+  }
+
+  .industry-section {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .industry-header {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: var(--primary-blue); /* Use primary blue for the header */
+  }
+
+  .industry-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+     /* Make cards stretch to equal height */
+  }
+
+  .industry-card {
+    width: calc(25% - 20px);
+    background: var(--neutral-white);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 5px solid var(--secondary-green); /* Green top border */
+  }
+
+  .industry-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .industry-card svg {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+    fill: var(--primary-blue); /* Use primary blue for icons */
+  }
+
+  .industry-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--primary-blue); /* Use primary blue for headings */
+  }
+
+  .industry-card p {
+    font-size: 14px;
+    color: var(--neutral-dark-gray); /* Use dark gray for text */
+  }
+
+  /* Medium screens: 2x2 layout */
+  @media (max-width: 1024px) {
+    .industry-card {
+      width: calc(50% - 20px);
+    }
+  }
+
+  /* Small screens: 1x4 layout */
+  @media (max-width: 768px) {
+    .industry-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+    .industry-card {
+      width: 100%;
+    }
+  }

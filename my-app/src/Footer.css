@@ -1,0 +1,93 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
+
+:root {
+    --primary-blue: #2A5CBF;
+    --secondary-green: #33A36D; 
+    --neutral-white: #FFFFFF; 
+    --neutral-light-gray: #F5F5F5; 
+    --neutral-dark-gray: #333333; 
+    --accent-yellow: #FFC107; 
+    --accent-aqua: #32BFC4; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.content {
+    flex: 1;
+}
+footer {
+    background-color: var(--neutral-dark-gray); /* Dark gray background */
+    color: var(--neutral-white); /* White text */
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+.footer-contact {
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+.footer-contact strong {
+    font-weight: bold;
+    color: var(--accent-aqua); /* Aqua accent for emphasis */
+}
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-links a {
+    color: var(--neutral-white); /* White text */
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s;
+}
+.footer-links a:hover {
+    color: var(--accent-yellow); /* Yellow accent on hover */
+}
+.footer-copyright {
+    font-size: 0.8em;
+    color: var(--neutral-light-gray); /* Light gray for copyright */
+}
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.footer-logo img {
+    width: 100px; /* Adjust logo size */
+    height: 100px; /* Ensure the image is square */
+    border-radius: 50%; /* Make the image round */
+    object-fit: cover; /* Ensure the image fits nicely */
+    margin-bottom: 20px;
+}
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footer-social a {
+    color: var(--neutral-white); /* White icons */
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+.footer-social a:hover {
+    color: var(--accent-aqua); /* Aqua accent on hover */
+}
+.vertical-line {
+    width: 1px;
+    height: 35vh;
+    background-color: var(--neutral-light-gray); /* Light gray vertical line */
+}
