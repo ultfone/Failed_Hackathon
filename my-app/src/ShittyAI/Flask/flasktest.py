@@ -11,7 +11,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
 # Configure Google Gemini API
-API_KEY = "AIzaSyAO41yoULATbDYiBNkQeOesOF8-5QrFd34"
+API_KEY = "Your_API_Key"
 genai.configure(api_key=API_KEY)
 
 # Define the Conversation Model
