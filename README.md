@@ -6,7 +6,7 @@
 
 ## Chatbot using Python and Flask  
 **Ojas**  
-🔗 [GitHub Repository](https://github.com/ultfone)  
+🔗 [GitHub Repository](https://github.com/ultfone/Gemini_flask)  
 
 ## UI/UX Design  
 **Zeeshan**  
